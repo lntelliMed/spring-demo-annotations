@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TrackCoach implements Coach {
 
+	@Autowired
 	private WeatherService weatherService;
 	
 	public TrackCoach(){
@@ -24,13 +25,14 @@ public class TrackCoach implements Coach {
 		return weatherService;
 	}
 
-	
+	/*
 	@Autowired
 	// Setter injection
 	public void setWeatherService(WeatherService weatherService) {
 		System.out.println(">> TrackCoach: Inside setWeatherService(WeatherService weatherService)");
 		this.weatherService = weatherService;
 	}
+	*/
 	
 	/*
 	@Autowired

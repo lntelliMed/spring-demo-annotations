@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TennisCoach implements Coach {
 	
+	@Autowired
 	private WeatherService weatherService;
 
 	public TennisCoach(){
@@ -26,12 +27,14 @@ public class TennisCoach implements Coach {
 		return weatherService;
 	}
 
+	/*
 	@Autowired
 	// Setter injection
 	public void setWeatherService(WeatherService weatherService) {
 		System.out.println(">> TennisCoach: Inside setWeatherService(WeatherService weatherService)");
 		this.weatherService = weatherService;
 	}
+	*/
 	
 	/*
 	@Autowired
